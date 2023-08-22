@@ -2,4 +2,4 @@ import { config } from "dotenv";
 
 config();
 
-export const { PORT, DATABASE_URL } = process.env;
+export const { PORT, DATABASE_URL, YOUTUBE_API_KEY } = process.env;
