@@ -6,6 +6,7 @@ import morgan from "morgan";
 import { PORT } from "./config";
 
 import { router as contactRouter } from "./contact/routes";
+import { router as youtubeRouter } from "./youtube/routes";
 
 const app = express();
 
@@ -46,6 +47,7 @@ async function initRouter() {
   });
 
   app.use("/contact", contactRouter);
+  app.use("/youtube", youtubeRouter);
 }
 
 init();
